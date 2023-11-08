@@ -1,7 +1,4 @@
-﻿
-
-
-namespace YG
+﻿namespace YG
 {
     [System.Serializable]
     public class SavesYG
@@ -14,5 +11,6 @@ namespace YG
 
         //Ваши сохранения
         public int score;
+        public int bestScore = 0;
     }
 }
