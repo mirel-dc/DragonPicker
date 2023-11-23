@@ -37,17 +37,16 @@ public class CheckConnectYG : MonoBehaviour
         Debug.Log("ach"+ YandexGame.savesData.achivMent);
         Debug.Log("find"+ GameObject.Find("ListAchiv"));
 
-        if (!(YandexGame.savesData.achivMent[0] == null) & GameObject.Find("ListAchiv"))
+        if (YandexGame.savesData.achivMent[0] == null & !GameObject.Find("ListAchiv"))
         {
-            foreach (string value in YandexGame.savesData.achivMent)
-            {
-                Debug.Log($"{value}");
-                GameObject.Find("ListAchiv").GetComponent<TextMeshProUGUI>().text = GameObject.Find("ListAchiv").GetComponent<TextMeshProUGUI>().text + value + "\n";
-            }
+            
         }
         else
         {
+            foreach (string value in YandexGame.savesData.achivMent)
+            {
+                GameObject.Find("ListAchiv").GetComponent<TextMeshProUGUI>().text = GameObject.Find("ListAchiv").GetComponent<TextMeshProUGUI>().text + value + "\n";
+            }
         }
-
     }
 }
