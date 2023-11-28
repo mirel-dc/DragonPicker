@@ -14,7 +14,7 @@ public class DragonPicker : MonoBehaviour
     private void OnDisable() => YandexGame.GetDataEvent -= GetLoadSave;
 
     public GameObject energyShieldPrefab;
-    public int numEnergyShield = 2;
+    public int numEnergyShield = 3;
     public float energyShieldBottomY = -6f;
     public float energyShieldRaduis = 1.5f;
 

@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energyShieldPrefab: {fileID: 2324863381822235061, guid: 2304bc588c5d164459cb935203486dfd, type: 3}
-  numEnergyShield: 1
+  numEnergyShield: 3
   energyShieldBottomY: -6
   energyShieldRaduis: 1.5
   scoreGT: {fileID: 650144512}
